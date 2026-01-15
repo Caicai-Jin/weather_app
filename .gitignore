@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (if applicable)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if applicable)
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Env / secrets
+.env
+.env.*
+*.key
+
+# Build outputs
+dist/
+build/
+out/
