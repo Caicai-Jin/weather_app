@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WeatherWise</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>WeatherWise</h1>
+    <p>University of Windsor campus zones</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <label for="zoneSelect">Select zone:</label>
+      <select id="zoneSelect"></select>
+      <button id="refreshBtn">Refresh</button>
+    </section>
+
+    <section class="card" id="nowCard">
+      <h2>Now</h2>
+      <div id="nowContent">Loading...</div>
+    </section>
+
+    <section class="card" id="forecastCard">
+      <h2>Forecast (next ~36 hours)</h2>
+      <div id="forecastContent">Loading...</div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

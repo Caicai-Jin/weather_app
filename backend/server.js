@@ -4,6 +4,7 @@ const { getZones } = require("./services/zoneService");
 const { getZoneById } = require("./services/zoneService");
 const { getCurrentWeatherByCoords, getForecastByCoords } = require("./services/weatherService");
 const { getCache, setCache } = require("./utils/cache");
+console.log("API KEY loaded?", !!process.env.OPENWEATHER_API_KEY);
 
 
 require("dotenv").config();
@@ -13,6 +14,8 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static("public"));
+
 
 // Basic route (sanity check)
 app.get("/api/health", (req, res) => {

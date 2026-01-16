@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f6f7fb; }
+.header { padding: 16px; background: white; border-bottom: 1px solid #ddd; }
+.container { padding: 16px; display: grid; gap: 12px; max-width: 900px; margin: 0 auto; }
+.card { background: white; padding: 12px 14px; border: 1px solid #e5e5e5; border-radius: 10px; }
+#nowContent, #forecastContent { margin-top: 8px; }
+.small { color: #555; font-size: 0.9rem; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+.pill { padding: 4px 8px; border-radius: 999px; background: #eef; display: inline-block; }
